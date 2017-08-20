@@ -68,12 +68,12 @@ Token</label>
 	$submit_logs_info = explode("\r\n",$submit_logs);
 	array_pop($submit_logs_info);
 	?>
-	<style type="text/css">
-		td{
-			padding-right: 5px;
-		}
-	</style>
-	<table>
+<div class="row">
+<div class="col-sm-12">
+<div class="panel panel-default card-view">	
+<div class="table-wrap ">
+<div class="table-responsive">	
+<table id="adm_link_list"  class="table table-striped table-bordered mb-0">
 		<tbody>
 		<tr><th>提交网址</th><th>提交状态</th><th>提交时间</th><th>错误原因</th></tr>
 		<?php
@@ -92,6 +92,10 @@ Token</label>
 		?>
 		</tbody>
 	</table>	
+</div>
+	</div>
+</div>
+</div>  	</div>	
 	<?php
 }
 
